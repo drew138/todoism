@@ -39,7 +39,7 @@ jobs:
       - name: Install tests deps
         run: |
           cd todoci
-          npm i
+          npm ci
 
       - name: Install Browsers
         run: npx playwright install --with-deps
@@ -47,7 +47,7 @@ jobs:
       - name: Run Playwright tests
         run: |
           cd todoci
-          npx playright test todo.spec.ts
+          npx playwright test todo.spec.ts
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
