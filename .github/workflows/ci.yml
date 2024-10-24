@@ -39,7 +39,7 @@ jobs:
       - name: Install tests deps
         run: |
           cd todoci
-          npm ci
+          npm i
 
       - name: Install Browsers
         run: npx playwright install --with-deps
