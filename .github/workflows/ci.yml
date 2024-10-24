@@ -32,7 +32,7 @@ jobs:
         run: git clone https://github.com/drew138/todoci.git
 
       - name: Setup Node
-        run: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
@@ -56,4 +56,3 @@ jobs:
           name: playwirght-report
           path: todoci/playwright-report/
           retention-days: 1
-
